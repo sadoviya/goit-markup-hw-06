@@ -458,6 +458,8 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--pure-white-color);
+  /* min-width: 231px; */
+  /* display: block; */
 }
 
 .footer-link {
@@ -471,8 +473,10 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  gap: 93px;
 }
+
+/* .footer-social-container {не задіяний} */
 
 .footer-social-text {
   font-weight: 700;
@@ -510,6 +514,21 @@ ul {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-site-color);
+}
+
+/* .footer-form {не задіяний} */
+
+.footer-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pure-white-color);
+}
+
+.footer-action-container {
+  margin-top: 20px;
 }
 
 .visually-hidden {
