@@ -389,10 +389,15 @@
           </ul>
         </div>
         <form class="footer-form">
-          <label class="footer-label">Підпишіться на розсилку</label>
+          <label class="footer-label" for="footer-mail">Підпишіться на розсилку</label>
           <div class="footer-action-container">
-            <input type="email" name="email" placeholder="E-mail" />
-            <button type="submit" class="">Підписатися</button>
+            <input id="footer-mail" type="email" name="email" placeholder="E-mail" class="footer-input"/>
+            <button type="submit" class="footer-button btn">
+              Підписатися
+              <svg width="24" height="24" class="footer-icon-send">
+                <use href="./images/sprite.svg#icon-footer-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
