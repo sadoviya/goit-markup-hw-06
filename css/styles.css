@@ -543,7 +543,6 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* жирний текст */
 }
 
 .footer-input:focus {
@@ -710,8 +709,8 @@ ul {
 
 .modal {
   position: relative;
-  min-width: 528px;
-  min-height: 521px;
+  width: 528px;
+  height: 581px;
   background-color: var(--pure-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -757,8 +756,8 @@ ul {
   color: var(--master-text-color);
 }
 
-.modal-field {
-  margin-bottom: 10px;
+.modal-item {
+  margin-top: 10px;
 }
 
 .modal-label {
@@ -774,8 +773,9 @@ ul {
 }
 
 .form-input:focus {
-  outline-color: var(--accent-site-color);
-  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  border-color: var(--accent-site-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus ~ .modal-icon {
@@ -810,7 +810,6 @@ ul {
 
 .modal-comments::placeholder {
   font-family: 'Roboto';
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -824,8 +823,10 @@ ul {
 .contract-label {
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-weight: 400;
   font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--slave-text-color);
 }
 
@@ -864,7 +865,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 55px;
+  padding: 10px 52px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -879,5 +880,5 @@ ul {
 }
 
 .btn-submit:active {
-    background-color: #188ce8;
+  background-color: #188ce8;
 }
